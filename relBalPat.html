@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Relatório Balanço Patrimonial</title>
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" >
+	
+	
+
+  
+ <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->     
+      <script src="js/jquery.js"></script>      
+      <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<nav class="navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Libertas Contabil</a>
+            </div>
+                <ul class="nav navbar-nav">
+                 <li class="active"><a href="home.html">Ínicio</a></li>
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastro
+                    <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="cadEmpresa.html">Empresa</a></li>
+                        <li><a href="cadUser.html">Usuário</a></li>
+                        <li><a href="cadPlaContas.html">Plano de contas</a></li>
+                        <li><a href="cadTipConta.html">Tipo de Conta</a></li>
+                        <li><a href="cadLancamento.html">Lançamento </a></li>
+                      </ul>
+                    </li>
+                    <li><a href="relBalPat.html">Relatório</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+                </ul>
+        </div>
+    </nav>
+<!-- FIM DO MENU -->
+<div class="panel panel-default">
+  <div class="panel-body">
+    <form class="form-horizontal">
+      <fieldset>
+          <legend>Informe os Parâmetros</legend>
+        <div class="col-xs-1">
+          <label for="ano">Ano </label>
+          <input type="text" class="form-control" id="ano"  placeholder="Ano" />
+        </div>  
+       <div class="col-xs-3">   
+          <label for="email">Empresa</label>
+          <div class="controls">
+        <select id="empresa" name="empresa" class="form-control">
+          <option>Empresa 1</option>
+          <option>Empresa 2</option>
+          <option>Empresa 3</option>
+          <option>Empresa 4</option>
+        </select>
+      </div>
+      </fieldset><br>
+      
+    
+      <div class="form-inline">
+        <button type="submit" class="btn btn-primary">Imprimir</button>
+        <button type="submit" class="btn btn-danger">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
